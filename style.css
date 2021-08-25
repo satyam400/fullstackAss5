@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+nav {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+nav div {
+    background-color: rgb(71, 71, 71);
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav a,
+nav span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+.firstDiv {
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    margin: auto;
+}
+
+.grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    /* background-color: antiquewhite; */
+    justify-content: space-evenly;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-gap: 10px;
+}
+
+.grid-itm {
+    height: 100%;
+    justify-self: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.itm1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.itm2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.itm3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.itm4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
