@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .grid {
+            /* border: solid 5px; */
+            display: grid;
+            grid-template-columns: repeat(4, 23%);
+            grid-template-rows: 500px;
+            justify-content: space-evenly;
+        }
+
+        .itm {
+            background-color: white;
+            padding: 20px 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px 0px rgb(158, 158, 158);
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            height: 40%;
+            display: block;
+            margin: auto;
+
+        }
+
+        .bld {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .link {
+            width: 100%;
+            margin: auto;
+            display: block;
+            text-align: center;
+            padding: 15px 10px;
+            background-color: rgb(131, 168, 28);
+            box-sizing: border-box;
+            border-radius: 5px;
+            position: relative;
+            justify-self: end;
+            color: white;
+            text-decoration: none;
+        }
+        .link:hover{
+            background-color: rgb(207, 80, 186);
+            animation: rotate 5s linear infinite;
+        }
+    
+        .lgt {
+            font-weight: 10;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>practical-6: create following layout using css layout properties.</h1>
+    <div class="grid">
+
+        <div class="itm">
+            <img src="./htmlImage.png" />
+            <p class="bld">Introduction to HTML</p>
+            <p class="lgt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga et id, magni voluptates unde
+                ipsam. Commodi quaerat expedita quo repudiandae, dignissimos dolore in a laboriosam blanditiis, dolores
+                ut, cupiditate quisquam!</p>
+            <a href="https:/www.google.com" target="_blank" class="link">Read More</a>
+        </div>
+        <div class="itm">
+            <img src="./cssImage.png" />
+            <p class="bld">Introduction to HTML</p>
+            <p class="lgt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga et id, magni voluptates unde
+                ipsam. Commodi quaerat expedita quo repudiandae, dignissimos dolore in a laboriosam blanditiis, dolores
+                ut, cupiditate quisquam!</p>
+            <a href="https:/www.google.com" target="_blank" class="link">Read More</a>
+        </div>
+        <div class="itm">
+            <img src="./jqueryImage.jpg">
+            <p class="bld">Introduction to HTML</p>
+            <p class="lgt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga et id, magni voluptates unde
+                ipsam. Commodi quaerat expedita quo repudiandae, dignissimos dolore in a laboriosam blanditiis, dolores
+                ut, cupiditate quisquam!</p>
+            <a href="https:/www.google.com" target="_blank" class="link">Read More</a>
+        </div>
+        <div class="itm">
+            <img src="./bootsrapImage.png" />
+            <p class="bld">Introduction to HTML</p>
+            <p class="lgt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga et id, magni voluptates unde
+                ipsam. Commodi quaerat expedita quo repudiandae, dignissimos dolore in a laboriosam blanditiis, dolores
+                ut, cupiditate quisquam!</p>
+            <a href="https:/www.google.com" target="_blank" class="link">Read More</a>
+        </div>
+    </div>
+</body>
+
+</html>
