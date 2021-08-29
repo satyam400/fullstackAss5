@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: lightgray;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: calc(100% - 20px);
+            margin: 20px;
+        }
+
+        .card {
+            height: inherit;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 2px 2px 8px 0px rgb(158, 158, 158);
+            padding: 20px;
+        }
+        img{
+            display: block;
+            margin: auto;
+            width: 700px;
+            border-radius: 10px;
+        }
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            text-align: justify;
+            font-size: larger;
+        }
+    </style>
+    <script>
+        window.onload = () => {
+            let currentURL =  window.location.href;
+            let URLobj = new URL(currentURL);
+            let image = URLobj.searchParams.get("image");
+            // document.getElementById("card").innerHTML = image;
+            document.getElementById("imgTag").setAttribute("src", "./"+image);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="card" id="card">
+        <img id ="imgTag" src = "gg">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis totam necessitatibus quo exercitationem nam corrupti minus dolor eaque a nulla fugit, sapiente eveniet excepturi esse animi ab. Cupiditate, nisi fugiat praesentium aspernatur aliquam est blanditiis, exercitationem nemo ipsa mollitia quos reprehenderit iste at corrupti, dolor tempore itaque nostrum maiores magni molestiae optio quam ipsam. Ab praesentium quas consequuntur optio porro. Aliquam optio earum harum eaque quod iste consequuntur dignissimos suscipit. Recusandae sequi magni corporis quaerat atque labore molestias consequuntur voluptatum repellendus, consectetur non est, laudantium culpa rerum ratione temporibus odit nostrum, quam officiis ex totam nesciunt obcaecati dolore. Consequuntur, a!</p>
+    </div>
+</body>
+
+</html>
